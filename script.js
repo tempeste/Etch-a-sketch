@@ -9,4 +9,23 @@ $(document).ready(function(){
 
       $("#container").append(row);
   }
+
+  //Drawing effect
+  $(".unit").mouseenter(function(){
+    $(this).addClass("gray")
+  });
+//reset
+  $("#reset").click(function(){
+    $(".unit").removeClass("gray")
+  });
+//hover on button
+  $("button").hover(function(){
+    $(this).fadeTo('fast',0.5)
+  },
+
+  function(){
+    $(this).fadeTo('fast',1)
+  });
+
+  
 });
